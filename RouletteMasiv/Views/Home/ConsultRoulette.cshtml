@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ConsultRoulette</title>
+</head>
+<body>
+    <div>
+        <p>Ruleta consulta exitosamente: </p>
+        <br />
+        @Html.Raw(ViewData["messageOperation"])
+        <br />
+        @Html.Raw(ViewData["idRuleta"])
+        <br />
+        @Html.Raw(ViewData["estadoRuleta"])
+        <br />
+        @Html.Raw(ViewData["fechaCreacion"])
+        <br />
+        <a href="/">Retornar</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ClientBet</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Home/ClientBetRoulette">
+            ID de la ruleta: <input name="rouletteID" type="text" size="20" maxlength="10" />
+            <br />
+            ID del cliente: <input name="clientID" type="text" size="20" maxlength="10" />
+            <br />
+            Monto a invertir: <input name="moneyBet" type="text" size="20" maxlength="20" />
+            <br />
+            Color: <input name="colourBet" type="text" size="20" maxlength="10" />
+            <br />
+            Número: <input name="numberBet" type="text" size="20" maxlength="2" />
+            <br />
+            <input type="submit" value="Consultar" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RouletteControl</title>
+</head>
+<body>
+    <div>
+
+        <form method="post" action="/Home/ConsultRoulette">
+            Ruleta a consultar: <input name="idRuleta" type="text" size="20" maxlength="10" />
+            <input type="submit" value="Consultar" />
+        </form>
+        <br />
+        <form method="post" action="/Home/CreateRoulette">
+            ID Ruleta: <input name="idCrear" type="text" size="20" maxlength="10" />
+            Estado: <input name="estado" type="text" size="20" maxlength="10" />
+            <input type="submit" value="Crear Ruleta" />
+        </form>
+        <br />
+        <form method="post" action="/Home/OpenRoulette">
+            Ruleta a abrir: <input name="ruletaOpen" type="text" size="20" maxlength="10" />
+            <p><input type="submit" value="Abrir Ruleta" /></p>
+        </form>
+        <br />
+        <form method="post" action="/Home/CloseRoulette">
+            Ruleta a cerrar: <input name="ruletaClose" type="text" size="20" maxlength="10" />
+            <p><input type="submit" value="Cerrar Ruleta" /></p>
+        </form>
+    </div>
+</body>
+</html>
